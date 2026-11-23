@@ -62,7 +62,6 @@ class BinarySearchTree:
             current = stack.pop()
             result.append(current.data)
 
-            # Push right first so that left is processed first.
             if current.right is not None:
                 stack.append(current.right)
 
